@@ -1,0 +1,4 @@
+{
+    "terminal.integrated.shell.windows": "powershell.exe",
+    "python.pythonPath": "C:\\Users\\yexia\\Miniconda3\\envs\\LatestPython\\python.exe"
+}

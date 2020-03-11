@@ -37,12 +37,43 @@
 
 ##17、range      
 
-##18、rename     
+##18、rename 
+
+__只是重命名id重复,不是单纯的改名字__
+
+改序列名称推荐：seqtk rename
+
+```sh {cmd=true}
+./software/seqkit rename -h
+```
+### 18.1、example
+
+```sh {cmd=true}
+echo -e ">a comment\nacgt\n>b comment of b\nACTG\n>a comment\naaaa"
+```
+```sh {cmd=true}
+echo -e ">a comment\nacgt\n>b comment of b\nACTG\n>a comment\naaaa"  | ./software/seqkit rename
+
+```
+
 
 ##19、replace    
 
+参数一览
 ```sh {cmd=true}
-./software/seqkit.exe replace -h
+echo -e ">abd\nATCGXXX"| ./software/seqkit.exe replace -p "X" -r "N" -s 
+```
+
+```sh {cmd=true}
+echo -e ">seq1\nACTGACGT\n>seq2\nactgccgt"  | ./software/seqkit replace -p "(.)" -r     "\$1 " -s
+```
+
+```sh {cmd="./software"}
+seqkit -h
+```
+
+```shell {cmd="powershell.exe"}
+tree
 ```
 
 ##20、restart    
