@@ -27,6 +27,11 @@
 
 ##12、grep       
 
+```sh {cmd=true, .line-hight, .line-numbers}
+# ./software/seqkit grep -h
+./software/seqkit grep -n -f <gene_list> <gene.fasta>
+```
+
 ##13、head       
 
 ##14、help       
@@ -95,6 +100,13 @@ tree
 ##28、split      
 
 ##29、split2     
+
+```{cmd=true}
+seqkit split2 -h
+```
+```{cmd=true}
+seqkit split2 -p 2  <file>
+```
 
 ##30、stats      
 
